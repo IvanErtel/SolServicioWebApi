@@ -51,5 +51,40 @@ namespace ServicioWebApi.Controllers
             await _Contexto.SaveChangesAsync();// aplica el insert
             return Ok(shipper);
         }
+
+        [HttpPut("{id}")]
+
+        public async Task<IActionResult> Actualizar(int id, Shipper shipper)
+        {
+            if (id!=shipper.ShipperID)
+            {
+                return BadRequest(); //400
+            }
+            _Contexto.Shippers.Update(shipper); //actualiza
+
+            try
+            {
+                await _Contexto.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return NoContent(); //codigo 204
+        }
+
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult> Borrar(int id)
+        {
+            var shipBorrar = await _Contexto.Shippers.FindAsync(id);
+            if (shipBorrar == null)
+            {
+                return NotFound();
+            }
+            _Contexto.Shippers.Remove(shipBorrar);
+            await _Contexto.SaveChangesAsync();
+            return Ok();
+        }
     }
 }
