@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ServicioWebApi.Data;
+using ServicioWebApi.Interfaces;
+using ServicioWebApi.Repositorios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ string strConexion = builder.Configuration.GetSection("ConnectionStrings:CadenaA
 
 //Registro el contexto
 builder.Services.AddDbContext<NorthwindContext>(opcion => opcion.UseSqlServer(strConexion));
+
+builder.Services.AddScoped<IShipper, RepoShipperEF>();
+
 builder.Services.AddControllers();
 
 // Se agrega Swagger
