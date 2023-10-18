@@ -1,14 +1,15 @@
  <h1 align="center"> :man_technologist: <em> Crud y consumo de DB con C# , .NET Core y SQL Server</em> :man_technologist: </h1> 
 
+
    <p align="center">
    :construction:
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    :construction:
    </p>
-   
-  <br>
+<br>
 
   <h2> :point_right: Sobre el proyecto</h2> 
+  
 
 >Aplicación CRUD (Create, Read, Update, Delete) utilizando el lenguaje de programación C# y el framework .NET Core. Esta aplicación se conecta a una base de datos alojada en Microsoft SQL Server. Esta actúa como intermediario entre los usuarios y una base de datos SQL Server, permitiendo la creación, lectura, actualización y eliminación de datos de manera controlada y eficaz.
 
@@ -42,11 +43,22 @@
 <br>
 
 <br>
+<h3> :hourglass_flowing_sand: Descarga de proyecto </h3>
 
-<h4>
-  *para que
-  *capacitacion web Api net core
-  * descarga y prueba del proyecto
-</h4>
+> **`Click en code luego descarga Download ZIP`**
+
+
+<p align="center">
+	<img src="https://github.com/IvanErtel/SolServicioWebApi/assets/87578635/dd6148b1-0247-4d46-8aac-55ee47502bd2" alt="Texto alternativo" width="700" height="400" aling="center">
+</p>
+
+> [!NOTE]
+> **El archivo ZIP deberas de descomprimirlo y abrir el proyecto en Visual Studio. Deberas darle doble click izquierdo en la solución y luego play dentro del visual
+> studio, intala los nuggets correspondientes y dale a play para iniciar el proyecto.**
+
+
+
+
+
 
 	
