@@ -58,7 +58,7 @@
 
 
 
+>Este proyecto se puede testeas con una vista razor, puede descargar el proyecto con la vista Razor desde el siguiente enlace.
 
-
-
+- [x] :star:	 [Proyecto Razor](https://github.com/IvanErtel/SolClienteRazor).
 	
